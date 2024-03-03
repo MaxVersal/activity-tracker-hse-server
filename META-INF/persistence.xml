@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+
+    <class>com.activitytrackhse.model.Project</class>
+    <class>com.activitytrackhse.model.Screenshot</class>
+    <class>com.activitytrackhse.model.SessionPart</class>
+    <class>com.activitytrackhse.model.Session</class>
+    <class>com.activitytrackhse.model.User</class>
+    <class>com.activitytrackhse.model.Work</class>
+      <properties>
+          <property name="hibernate.connection.url"
+                    value="jdbc:postgresql://db.infostrategic.com:5432/activitytracking"/>
+          <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+      </properties>
+  </persistence-unit>
+</persistence>
